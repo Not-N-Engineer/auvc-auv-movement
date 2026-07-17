@@ -1,5 +1,8 @@
 import rclpy    # the ROS 2 client library for Python
 from rclpy.node import Node    # the ROS 2 Node class
+import math
+import time
+from mavros_msgs.msg import ManualControl
 from sensor_msgs.msg import (
     FluidPressure as Pressure,
     Temperature,
@@ -15,19 +18,23 @@ class DepthMovement(Node):
         super().__init__("pid_node")
 
         #Variables
-        self.previous_error = -1.0
         self.z = None
         self.target_z = None
+        self.previous_error = -1.0
         self.pid = 0.0
-        self.dt = 0.05 # idk
+        self.dt = 0.05
 
-        #Subscriber
+        # Subscribers
         self.current_depth = self.create_subscription(Pressure, "pressure", self.current_depth_callback)
         # self.target_depth = self.create_subscription()
 
-        # Publisher?
+        # Publisher
+        self.publish_depth_pid = self.create_publisher(ManualControl, '/manual_control', 10)
 
-    #Z-axis callbakcs and PID application
+        # Publishing PID at 20 Hz
+        self.timer = self.create_timer(self.dt, self.publish_pid)
+
+
     def current_depth_callback(self, msg):
         # Callback
         pressure = msg.fluid_pressure # kg / s^2 * m
@@ -37,12 +44,22 @@ class DepthMovement(Node):
         self.z = depth
         self.get_logger().info(f"New depth: {self.z}")
 
-        # Calculating PID
-        if self.previous_error == -1.0: self.previous_error = self.target_z - self.z
-        self.pid, self.previous_error = pid(self.target_z, self.z, self.previous_error, self.dt)
-        self.get_logger().info(f"New pid: {self.pid}")
-        self.get_logger().info(f"New error: {self.previous_error}")
+    def publish_pid(self):
+        if not math.isclose(self.z, self.target_z, rel_tol=1e-05, abs_tol=0.0):
+            # Calculating PID
+            if self.previous_error == -1.0: self.previous_error = self.target_z - self.z
+            self.pid, self.previous_error = pid(self.target_z, self.z, self.previous_error, self.dt)
+            self.get_logger().info(f"New pid: {self.pid}")
+            self.get_logger().info(f"New error: {self.previous_error}")
 
+            msg = ManualControl()
+            msg.x = 0.0
+            msg.y = 0.0
+            msg.z = self.pid
+            msg.r = 500.0
+            self.publish_depth_pid.publish(msg)
+            self.get_logger().info(f"Target Depth: {self.target_z}")
+            self.get_logger().info(f"Current Depth: {self.z}")
 
 
 def main(args=None):
