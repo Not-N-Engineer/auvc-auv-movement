@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'pid_node = ros2_auv_pid.pid_node:main',
         ],
     },
 )
