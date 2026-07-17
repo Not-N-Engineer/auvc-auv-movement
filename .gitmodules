@@ -1,0 +1,3 @@
+[submodule "src/rosmav"]
+	path = src/rosmav
+	url = https://github.com/Not-N-Engineer/auvc-auv-movement
