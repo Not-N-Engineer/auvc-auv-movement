@@ -1,0 +1,59 @@
+import rclpy    # the ROS 2 client library for Python
+from rclpy.node import Node    # the ROS 2 Node class
+from sensor_msgs.msg import (
+    FluidPressure as Pressure,
+    Temperature,
+    MagneticField,
+    Imu,
+    BatteryState,
+)
+from ros2_auv_pid.pid import *
+
+
+class DepthMovement(Node):
+    def __init__(self):
+        super().__init__("pid_node")
+
+        #Variables
+        self.previous_error = -1.0
+        self.z = None
+        self.target_z = None
+        self.pid = 0.0
+        self.dt = 0.05 # idk
+
+        #Subscriber
+        self.current_depth = self.create_subscription(Pressure, "pressure", self.current_depth_callback)
+        # self.target_depth = self.create_subscription()
+
+        # Publisher?
+
+    #Z-axis callbakcs and PID application
+    def current_depth_callback(self, msg):
+        # Callback
+        pressure = msg.fluid_pressure # kg / s^2 * m
+        g = 9.81         # m / s^2
+        density = 1000   # kg / m^3
+        depth = pressure / (g * density) # m
+        self.z = depth
+        self.get_logger().info(f"New depth: {self.z}")
+
+        # Calculating PID
+        if self.previous_error == -1.0: self.previous_error = self.target_z - self.z
+        self.pid, self.previous_error = pid(self.target_z, self.z, self.previous_error, self.dt)
+        self.get_logger().info(f"New pid: {self.pid}")
+        self.get_logger().info(f"New error: {self.previous_error}")
+
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = DepthMovement()
+
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        print("\nKeyboardInterrupt received, shutting down...")
+    finally:
+        node.destroy_node()
+        if rclpy.ok():
+            rclpy.shutdown()
