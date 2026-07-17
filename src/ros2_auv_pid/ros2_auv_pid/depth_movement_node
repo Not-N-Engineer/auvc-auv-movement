@@ -56,7 +56,7 @@ class DepthMovement(Node):
             msg.x = 0.0
             msg.y = 0.0
             msg.z = self.pid
-            msg.r = 500.0
+            msg.r = 0.0
             self.publish_depth_pid.publish(msg)
             self.get_logger().info(f"Target Depth: {self.target_z}")
             self.get_logger().info(f"Current Depth: {self.z}")
