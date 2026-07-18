@@ -3,13 +3,7 @@ from rclpy.node import Node    # the ROS 2 Node class
 import math
 import time
 from mavros_msgs.msg import ManualControl
-from sensor_msgs.msg import (
-    FluidPressure as Pressure,
-    Temperature,
-    MagneticField,
-    Imu,
-    BatteryState,
-)
+from sensor_msgs.msg import (FluidPressure as Pressure,)
 from ros2_auv_pid.pid import *
 
 
