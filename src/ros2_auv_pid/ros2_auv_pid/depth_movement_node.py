@@ -31,7 +31,7 @@ class DepthMovement(Node):
 
     def current_depth_callback(self, msg):
         # Callback
-        pressure = msg.fluid_pressure # kg / s^2 * m
+        pressure = msg.fluid_pressure - 101325 # kg / s^2 * m
         g = 9.81         # m / s^2
         density = 1000   # kg / m^3
         depth = pressure / (g * density) # m
