@@ -13,6 +13,9 @@ cd ~/auvc-auv-movement && colcon build --packages-select ros2_auv_pid && source 
   
 **All nodes run:**  
 ros2 launch ros2_auv_pid pid.launch.yaml
+ros2 run ros2_auv_pid depth_movement_node
+ros2 run ros2_auv_pid heading_movement_node
+ros2 run ros2_auv_pid movement_publisher_node
   
   
 **Arm**  
