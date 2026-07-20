@@ -1,0 +1,19 @@
+launch:
+
+- node:
+    pkg: "ros2_auv_pid"
+    exec: "depth_movement_node"
+    name: "depth_node"
+    namespace: ""
+
+- node:
+    pkg: "ros2_auv_pid"
+    exec: "heading_movement_node"
+    name: "heading_node"
+    namespace: ""
+
+- node:
+    pkg: "ros2_auv_pid"
+    exec: "movement_publisher_node"
+    name: "main_publishing_node"
+    namespace: ""
