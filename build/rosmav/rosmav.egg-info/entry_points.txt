@@ -1,0 +1,4 @@
+[console_scripts]
+bluerov2_camera_interface = rosmav.bluerov2_camera_interface:main
+bluerov2_hardware_interface = rosmav.bluerov2_hardware_interface:main
+bluerov2_simulation_interface = rosmav.bluerov2_simulation_interface:main

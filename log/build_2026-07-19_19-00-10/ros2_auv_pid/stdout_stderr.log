@@ -1,0 +1,42 @@
+running egg_info
+creating ../../build/ros2_auv_pid/ros2_auv_pid.egg-info
+writing ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/requires.txt
+writing top-level names to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/top_level.txt
+writing manifest file '../../build/ros2_auv_pid/ros2_auv_pid.egg-info/SOURCES.txt'
+reading manifest file '../../build/ros2_auv_pid/ros2_auv_pid.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2_auv_pid/ros2_auv_pid.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/name/auvc-auv-movement/build/ros2_auv_pid/build
+creating /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib
+creating /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid
+copying ros2_auv_pid/arming_node.py -> /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid
+copying ros2_auv_pid/pid.py -> /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid
+copying ros2_auv_pid/depth_movement_node.py -> /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid
+copying ros2_auv_pid/__init__.py -> /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid
+running install
+running install_lib
+creating /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid
+copying /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid/arming_node.py -> /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid
+copying /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid/pid.py -> /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid
+copying /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid/depth_movement_node.py -> /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid
+copying /home/name/auvc-auv-movement/build/ros2_auv_pid/build/lib/ros2_auv_pid/__init__.py -> /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid
+byte-compiling /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid/arming_node.py to arming_node.cpython-312.pyc
+byte-compiling /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid/pid.py to pid.cpython-312.pyc
+byte-compiling /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid/depth_movement_node.py to depth_movement_node.cpython-312.pyc
+byte-compiling /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/name/auvc-auv-movement/install/ros2_auv_pid/share/ament_index
+creating /home/name/auvc-auv-movement/install/ros2_auv_pid/share/ament_index/resource_index
+creating /home/name/auvc-auv-movement/install/ros2_auv_pid/share/ament_index/resource_index/packages
+copying resource/ros2_auv_pid -> /home/name/auvc-auv-movement/install/ros2_auv_pid/share/ament_index/resource_index/packages
+copying package.xml -> /home/name/auvc-auv-movement/install/ros2_auv_pid/share/ros2_auv_pid
+running install_egg_info
+Copying ../../build/ros2_auv_pid/ros2_auv_pid.egg-info to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid-0.0.0-py3.12.egg-info
+running install_scripts
+Installing arming_node script to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/ros2_auv_pid
+Installing depth_movement_node script to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/ros2_auv_pid
+writing list of installed files to '/home/name/auvc-auv-movement/build/ros2_auv_pid/install.log'

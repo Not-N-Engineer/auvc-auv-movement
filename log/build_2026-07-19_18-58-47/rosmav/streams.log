@@ -1,0 +1,23 @@
+[5.237s] Invoking command in '/home/name/auvc-auv-movement/src/rosmav': PYTHONPATH=/home/name/auvc-auv-movement/build/rosmav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rosmav build --build-base /home/name/auvc-auv-movement/build/rosmav/build install --record /home/name/auvc-auv-movement/build/rosmav/install.log --install-scripts $base/lib/rosmav --single-version-externally-managed install_data
+[6.768s] running egg_info
+[6.889s] writing ../../build/rosmav/rosmav.egg-info/PKG-INFO
+[6.890s] writing dependency_links to ../../build/rosmav/rosmav.egg-info/dependency_links.txt
+[6.891s] writing entry points to ../../build/rosmav/rosmav.egg-info/entry_points.txt
+[6.892s] writing requirements to ../../build/rosmav/rosmav.egg-info/requires.txt
+[6.893s] writing top-level names to ../../build/rosmav/rosmav.egg-info/top_level.txt
+[7.732s] reading manifest file '../../build/rosmav/rosmav.egg-info/SOURCES.txt'
+[7.735s] writing manifest file '../../build/rosmav/rosmav.egg-info/SOURCES.txt'
+[7.736s] running build
+[7.737s] running build_py
+[7.739s] running install
+[7.764s] running install_lib
+[7.889s] running install_data
+[7.891s] running install_egg_info
+[8.019s] removing '/home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav-0.0.0-py3.12.egg-info' (and everything under it)
+[8.021s] Copying ../../build/rosmav/rosmav.egg-info to /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav-0.0.0-py3.12.egg-info
+[8.027s] running install_scripts
+[8.344s] Installing bluerov2_camera_interface script to /home/name/auvc-auv-movement/install/rosmav/lib/rosmav
+[8.345s] Installing bluerov2_hardware_interface script to /home/name/auvc-auv-movement/install/rosmav/lib/rosmav
+[8.346s] Installing bluerov2_simulation_interface script to /home/name/auvc-auv-movement/install/rosmav/lib/rosmav
+[8.348s] writing list of installed files to '/home/name/auvc-auv-movement/build/rosmav/install.log'
+[8.504s] Invoked command in '/home/name/auvc-auv-movement/src/rosmav' returned '0': PYTHONPATH=/home/name/auvc-auv-movement/build/rosmav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rosmav build --build-base /home/name/auvc-auv-movement/build/rosmav/build install --record /home/name/auvc-auv-movement/build/rosmav/install.log --install-scripts $base/lib/rosmav --single-version-externally-managed install_data

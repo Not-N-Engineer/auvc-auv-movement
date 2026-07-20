@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000963] (-) JobUnselected: {'identifier': 'rosmav'}
+[0.001766] (ros2_auv_pid) JobQueued: {'identifier': 'ros2_auv_pid', 'dependencies': OrderedDict()}
+[0.002265] (ros2_auv_pid) JobStarted: {'identifier': 'ros2_auv_pid'}
+[0.099231] (-) TimerEvent: {}
+[0.199863] (-) TimerEvent: {}
+[0.300587] (-) TimerEvent: {}
+[0.401223] (-) TimerEvent: {}
+[0.501916] (-) TimerEvent: {}
+[0.602715] (-) TimerEvent: {}
+[0.703440] (-) TimerEvent: {}
+[0.804139] (-) TimerEvent: {}
+[0.904869] (-) TimerEvent: {}
+[1.005639] (-) TimerEvent: {}
+[1.106424] (-) TimerEvent: {}
+[1.214462] (-) TimerEvent: {}
+[1.315419] (-) TimerEvent: {}
+[1.421455] (-) TimerEvent: {}
+[1.522227] (-) TimerEvent: {}
+[1.623884] (-) TimerEvent: {}
+[1.730217] (-) TimerEvent: {}
+[1.832388] (-) TimerEvent: {}
+[1.933081] (-) TimerEvent: {}
+[2.033858] (-) TimerEvent: {}
+[2.134525] (-) TimerEvent: {}
+[2.235153] (-) TimerEvent: {}
+[2.335793] (-) TimerEvent: {}
+[2.436420] (-) TimerEvent: {}
+[2.537207] (-) TimerEvent: {}
+[2.637832] (-) TimerEvent: {}
+[2.738424] (-) TimerEvent: {}
+[2.839010] (-) TimerEvent: {}
+[2.939668] (-) TimerEvent: {}
+[3.040242] (-) TimerEvent: {}
+[3.140877] (-) TimerEvent: {}
+[3.241637] (-) TimerEvent: {}
+[3.342339] (-) TimerEvent: {}
+[3.442912] (-) TimerEvent: {}
+[3.543690] (-) TimerEvent: {}
+[3.644333] (-) TimerEvent: {}
+[3.745014] (-) TimerEvent: {}
+[3.845954] (-) TimerEvent: {}
+[3.946671] (-) TimerEvent: {}
+[4.047356] (-) TimerEvent: {}
+[4.148044] (-) TimerEvent: {}
+[4.248742] (-) TimerEvent: {}
+[4.349385] (-) TimerEvent: {}
+[4.449963] (-) TimerEvent: {}
+[4.550627] (-) TimerEvent: {}
+[4.651381] (-) TimerEvent: {}
+[4.752179] (-) TimerEvent: {}
+[4.852821] (-) TimerEvent: {}
+[4.953526] (-) TimerEvent: {}
+[5.054118] (-) TimerEvent: {}
+[5.154824] (-) TimerEvent: {}
+[5.255625] (-) TimerEvent: {}
+[5.356370] (-) TimerEvent: {}
+[5.456941] (-) TimerEvent: {}
+[5.557680] (-) TimerEvent: {}
+[5.658548] (-) TimerEvent: {}
+[5.663958] (ros2_auv_pid) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/ros2_auv_pid', 'build', '--build-base', '/home/name/auvc-auv-movement/build/ros2_auv_pid/build', 'install', '--record', '/home/name/auvc-auv-movement/build/ros2_auv_pid/install.log', '--install-scripts', '$base/lib/ros2_auv_pid', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/name/auvc-auv-movement/src/ros2_auv_pid', 'env': {'PYTHON_BASIC_REPL': '1', 'VIRTUALENVWRAPPER_WORKON_CD': '1', 'USER': 'name', 'SSH_CLIENT': '192.168.3.1 53316 22', 'WORKON_HOME': '/home/name/.virtualenvs', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/name/.vscode-server/cli/servers/Stable-125df4672b8a6a34975303c6b0baa124e560a4f7/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'BROWSER': '/home/name/.vscode-server/cli/servers/Stable-125df4672b8a6a34975303c6b0baa124e560a4f7/server/bin/helpers/browser.sh', 'LD_LIBRARY_PATH': '/home/name/auvc_ws/install/example_custom_srv/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/name', 'OLDPWD': '/home/name/auvc-auv-movement', 'LESS': '-R', 'VIRTUALENVWRAPPER_PYTHON': '/usr/bin/python3', 'TERM_PROGRAM_VERSION': '1.129.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1004/vscode-ipc-d0c92b50-a25d-461a-9077-aab261918702.sock', 'ZSH': '/home/name/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'VSCODE_GIT_ASKPASS_MAIN': '/home/name/.vscode-server/cli/servers/Stable-125df4672b8a6a34975303c6b0baa124e560a4f7/server/extensions/git/dist/askpass-main.js', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'PS1': '(ardusub) %(?:%{\x1b[01;32m%}%1{➜%} :%{\x1b[01;31m%}%1{➜%} ) %{\x1b[36m%}%c%{\x1b[00m%} $(git_prompt_info)', 'VSCODE_GIT_ASKPASS_NODE': '/home/name/.vscode-server/cli/servers/Stable-125df4672b8a6a34975303c6b0baa124e560a4f7/server/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1004/bus', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/name/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/name/auvc-auv-movement/install:/home/name/auvc_ws/install:/home/name/install', 'LOGNAME': 'name', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USER_ZDOTDIR': '/home/name', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '1', 'TERM': 'xterm-256color', 'PATH': '/home/name/.virtualenvs/ardusub/bin:/usr/lib/ccache:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/name/.vscode-server/cli/servers/Stable-125df4672b8a6a34975303c6b0baa124e560a4f7/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/name/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts:/home/name/.local/bin:/home/name/ardupilot/Tools/autotest', 'XDG_RUNTIME_DIR': '/run/user/1004', 'LANG': 'en_US.UTF-8', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/name/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-456a97d883fd478c.txt', 'PYTHONSTARTUP': '/home/name/.vscode-server/data/User/workspaceStorage/c2cff5e1100dc079d06fdd3bf1ae03f7/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'VIRTUAL_ENV_PROMPT': 'ardusub', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1004/vscode-git-f1aa360823.sock', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/name/auvc-auv-movement/install/rosmav:/home/name/auvc-auv-movement/install/ros2_auv_pid:/home/name/auvc_ws/install/tutorial_virtualenvs:/home/name/auvc_ws/install/tutorial_ardusub:/home/name/auvc_ws/install/tutorial:/home/name/auvc_ws/install/rosmav:/home/name/auvc_ws/install/example_custom_srv:/home/name/install/rosmav:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project', 'VIRTUALENVWRAPPER_HOOK_DIR': '/home/name/.virtualenvs', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VIRTUAL_ENV': '/home/name/.virtualenvs/ardusub', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/name/auvc-auv-movement/build/ros2_auv_pid', 'SSH_CONNECTION': '192.168.3.1 53316 192.168.3.2 22', 'ZDOTDIR': '/home/name', 'PYTHONPATH': '/home/name/auvc-auv-movement/build/ros2_auv_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages:/home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages:/home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages:/home/name/auvc_ws/install/tutorial_virtualenvs/lib/python3.12/site-packages:/home/name/auvc_ws/install/tutorial_ardusub/lib/python3.12/site-packages:/home/name/auvc_ws/install/tutorial/lib/python3.12/site-packages:/home/name/auvc_ws/install/rosmav/lib/python3.12/site-packages:/home/name/auvc_ws/install/example_custom_srv/lib/python3.12/site-packages:/home/name/install/rosmav/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/name/auvc_ws/install/example_custom_srv:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[5.758694] (-) TimerEvent: {}
+[5.859292] (-) TimerEvent: {}
+[5.960007] (-) TimerEvent: {}
+[6.060669] (-) TimerEvent: {}
+[6.161288] (-) TimerEvent: {}
+[6.261939] (-) TimerEvent: {}
+[6.362560] (-) TimerEvent: {}
+[6.463249] (-) TimerEvent: {}
+[6.563920] (-) TimerEvent: {}
+[6.664556] (-) TimerEvent: {}
+[6.765146] (-) TimerEvent: {}
+[6.865789] (-) TimerEvent: {}
+[6.966396] (-) TimerEvent: {}
+[7.066981] (-) TimerEvent: {}
+[7.167614] (-) TimerEvent: {}
+[7.229862] (ros2_auv_pid) StdoutLine: {'line': b'running egg_info\n'}
+[7.267765] (-) TimerEvent: {}
+[7.353686] (ros2_auv_pid) StdoutLine: {'line': b'writing ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/PKG-INFO\n'}
+[7.354866] (ros2_auv_pid) StdoutLine: {'line': b'writing dependency_links to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/dependency_links.txt\n'}
+[7.356069] (ros2_auv_pid) StdoutLine: {'line': b'writing entry points to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/entry_points.txt\n'}
+[7.356914] (ros2_auv_pid) StdoutLine: {'line': b'writing requirements to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/requires.txt\n'}
+[7.357740] (ros2_auv_pid) StdoutLine: {'line': b'writing top-level names to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/top_level.txt\n'}
+[7.367925] (-) TimerEvent: {}
+[7.468506] (-) TimerEvent: {}
+[7.569126] (-) TimerEvent: {}
+[7.669769] (-) TimerEvent: {}
+[7.770388] (-) TimerEvent: {}
+[7.870983] (-) TimerEvent: {}
+[7.971598] (-) TimerEvent: {}
+[8.072186] (-) TimerEvent: {}
+[8.172815] (-) TimerEvent: {}
+[8.223182] (ros2_auv_pid) StdoutLine: {'line': b"reading manifest file '../../build/ros2_auv_pid/ros2_auv_pid.egg-info/SOURCES.txt'\n"}
+[8.227262] (ros2_auv_pid) StdoutLine: {'line': b"writing manifest file '../../build/ros2_auv_pid/ros2_auv_pid.egg-info/SOURCES.txt'\n"}
+[8.228250] (ros2_auv_pid) StdoutLine: {'line': b'running build\n'}
+[8.228926] (ros2_auv_pid) StdoutLine: {'line': b'running build_py\n'}
+[8.230451] (ros2_auv_pid) StdoutLine: {'line': b'running install\n'}
+[8.255481] (ros2_auv_pid) StdoutLine: {'line': b'running install_lib\n'}
+[8.272964] (-) TimerEvent: {}
+[8.373548] (-) TimerEvent: {}
+[8.385863] (ros2_auv_pid) StdoutLine: {'line': b'running install_data\n'}
+[8.386683] (ros2_auv_pid) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.473706] (-) TimerEvent: {}
+[8.516656] (ros2_auv_pid) StdoutLine: {'line': b"removing '/home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[8.518493] (ros2_auv_pid) StdoutLine: {'line': b'Copying ../../build/ros2_auv_pid/ros2_auv_pid.egg-info to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid-0.0.0-py3.12.egg-info\n'}
+[8.524119] (ros2_auv_pid) StdoutLine: {'line': b'running install_scripts\n'}
+[8.573873] (-) TimerEvent: {}
+[8.674532] (-) TimerEvent: {}
+[8.775406] (-) TimerEvent: {}
+[8.872551] (ros2_auv_pid) StdoutLine: {'line': b'Installing arming_node script to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/ros2_auv_pid\n'}
+[8.873626] (ros2_auv_pid) StdoutLine: {'line': b'Installing depth_movement_node script to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/ros2_auv_pid\n'}
+[8.875374] (ros2_auv_pid) StdoutLine: {'line': b"writing list of installed files to '/home/name/auvc-auv-movement/build/ros2_auv_pid/install.log'\n"}
+[8.876092] (-) TimerEvent: {}
+[8.977163] (-) TimerEvent: {}
+[9.028144] (ros2_auv_pid) CommandEnded: {'returncode': 0}
+[9.075741] (ros2_auv_pid) JobEnded: {'identifier': 'ros2_auv_pid', 'rc': 0}
+[9.079187] (-) TimerEvent: {}
+[9.079507] (-) EventReactorShutdown: {}

@@ -1,0 +1,50 @@
+[10.335s] Invoking command in '/home/name/auvc-auv-movement/src/rosmav': PYTHONPATH=/home/name/auvc-auv-movement/build/rosmav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rosmav build --build-base /home/name/auvc-auv-movement/build/rosmav/build install --record /home/name/auvc-auv-movement/build/rosmav/install.log --install-scripts $base/lib/rosmav --single-version-externally-managed install_data
+[14.164s] running egg_info
+[14.166s] creating ../../build/rosmav/rosmav.egg-info
+[14.497s] writing ../../build/rosmav/rosmav.egg-info/PKG-INFO
+[14.504s] writing dependency_links to ../../build/rosmav/rosmav.egg-info/dependency_links.txt
+[14.511s] writing entry points to ../../build/rosmav/rosmav.egg-info/entry_points.txt
+[14.518s] writing requirements to ../../build/rosmav/rosmav.egg-info/requires.txt
+[14.519s] writing top-level names to ../../build/rosmav/rosmav.egg-info/top_level.txt
+[15.805s] writing manifest file '../../build/rosmav/rosmav.egg-info/SOURCES.txt'
+[16.983s] reading manifest file '../../build/rosmav/rosmav.egg-info/SOURCES.txt'
+[16.993s] writing manifest file '../../build/rosmav/rosmav.egg-info/SOURCES.txt'
+[16.993s] running build
+[16.997s] running build_py
+[16.999s] creating /home/name/auvc-auv-movement/build/rosmav/build
+[17.001s] creating /home/name/auvc-auv-movement/build/rosmav/build/lib
+[17.005s] creating /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav
+[17.006s] copying rosmav/bluerov2_simulation_interface.py -> /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav
+[17.010s] copying rosmav/bluerov2_hardware_interface.py -> /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav
+[17.016s] copying rosmav/bluerov2_camera_interface.py -> /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav
+[17.019s] copying rosmav/__init__.py -> /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav
+[17.029s] running install
+[17.071s] running install_lib
+[18.314s] creating /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav
+[18.318s] copying /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav/bluerov2_simulation_interface.py -> /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav
+[18.319s] copying /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav/bluerov2_hardware_interface.py -> /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav
+[18.325s] copying /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav/bluerov2_camera_interface.py -> /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav
+[18.326s] copying /home/name/auvc-auv-movement/build/rosmav/build/lib/rosmav/__init__.py -> /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav
+[18.331s] byte-compiling /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav/bluerov2_simulation_interface.py to bluerov2_simulation_interface.cpython-312.pyc
+[18.335s] byte-compiling /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav/bluerov2_hardware_interface.py to bluerov2_hardware_interface.cpython-312.pyc
+[18.341s] byte-compiling /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav/bluerov2_camera_interface.py to bluerov2_camera_interface.cpython-312.pyc
+[18.346s] byte-compiling /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav/__init__.py to __init__.cpython-312.pyc
+[18.351s] running install_data
+[18.356s] creating /home/name/auvc-auv-movement/install/rosmav/share/ament_index
+[18.357s] creating /home/name/auvc-auv-movement/install/rosmav/share/ament_index/resource_index
+[18.358s] creating /home/name/auvc-auv-movement/install/rosmav/share/ament_index/resource_index/packages
+[18.359s] copying resource/rosmav -> /home/name/auvc-auv-movement/install/rosmav/share/ament_index/resource_index/packages
+[18.360s] copying package.xml -> /home/name/auvc-auv-movement/install/rosmav/share/rosmav
+[18.363s] creating /home/name/auvc-auv-movement/install/rosmav/share/rosmav/launch
+[18.364s] copying launch/simulation.launch.py -> /home/name/auvc-auv-movement/install/rosmav/share/rosmav/launch
+[18.366s] copying launch/hardware_launch.yaml -> /home/name/auvc-auv-movement/install/rosmav/share/rosmav/launch
+[18.367s] creating /home/name/auvc-auv-movement/install/rosmav/share/rosmav/config
+[18.367s] copying config/bridge.yaml -> /home/name/auvc-auv-movement/install/rosmav/share/rosmav/config
+[18.370s] running install_egg_info
+[19.008s] Copying ../../build/rosmav/rosmav.egg-info to /home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages/rosmav-0.0.0-py3.12.egg-info
+[19.016s] running install_scripts
+[20.132s] Installing bluerov2_camera_interface script to /home/name/auvc-auv-movement/install/rosmav/lib/rosmav
+[20.139s] Installing bluerov2_hardware_interface script to /home/name/auvc-auv-movement/install/rosmav/lib/rosmav
+[20.146s] Installing bluerov2_simulation_interface script to /home/name/auvc-auv-movement/install/rosmav/lib/rosmav
+[20.148s] writing list of installed files to '/home/name/auvc-auv-movement/build/rosmav/install.log'
+[20.484s] Invoked command in '/home/name/auvc-auv-movement/src/rosmav' returned '0': PYTHONPATH=/home/name/auvc-auv-movement/build/rosmav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/name/auvc-auv-movement/install/rosmav/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rosmav build --build-base /home/name/auvc-auv-movement/build/rosmav/build install --record /home/name/auvc-auv-movement/build/rosmav/install.log --install-scripts $base/lib/rosmav --single-version-externally-managed install_data

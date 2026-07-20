@@ -1,0 +1,22 @@
+[5.107s] Invoking command in '/home/name/auvc-auv-movement/src/ros2_auv_pid': PYTHONPATH=/home/name/auvc-auv-movement/build/ros2_auv_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_auv_pid build --build-base /home/name/auvc-auv-movement/build/ros2_auv_pid/build install --record /home/name/auvc-auv-movement/build/ros2_auv_pid/install.log --install-scripts $base/lib/ros2_auv_pid --single-version-externally-managed install_data
+[6.707s] running egg_info
+[6.830s] writing ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/PKG-INFO
+[6.831s] writing dependency_links to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/dependency_links.txt
+[6.832s] writing entry points to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/entry_points.txt
+[6.833s] writing requirements to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/requires.txt
+[6.834s] writing top-level names to ../../build/ros2_auv_pid/ros2_auv_pid.egg-info/top_level.txt
+[7.702s] reading manifest file '../../build/ros2_auv_pid/ros2_auv_pid.egg-info/SOURCES.txt'
+[7.706s] writing manifest file '../../build/ros2_auv_pid/ros2_auv_pid.egg-info/SOURCES.txt'
+[7.707s] running build
+[7.708s] running build_py
+[7.710s] running install
+[7.736s] running install_lib
+[7.868s] running install_data
+[7.868s] running install_egg_info
+[7.998s] removing '/home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid-0.0.0-py3.12.egg-info' (and everything under it)
+[8.000s] Copying ../../build/ros2_auv_pid/ros2_auv_pid.egg-info to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages/ros2_auv_pid-0.0.0-py3.12.egg-info
+[8.005s] running install_scripts
+[8.339s] Installing arming_node script to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/ros2_auv_pid
+[8.340s] Installing depth_movement_node script to /home/name/auvc-auv-movement/install/ros2_auv_pid/lib/ros2_auv_pid
+[8.342s] writing list of installed files to '/home/name/auvc-auv-movement/build/ros2_auv_pid/install.log'
+[8.496s] Invoked command in '/home/name/auvc-auv-movement/src/ros2_auv_pid' returned '0': PYTHONPATH=/home/name/auvc-auv-movement/build/ros2_auv_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/name/auvc-auv-movement/install/ros2_auv_pid/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_auv_pid build --build-base /home/name/auvc-auv-movement/build/ros2_auv_pid/build install --record /home/name/auvc-auv-movement/build/ros2_auv_pid/install.log --install-scripts $base/lib/ros2_auv_pid --single-version-externally-managed install_data
