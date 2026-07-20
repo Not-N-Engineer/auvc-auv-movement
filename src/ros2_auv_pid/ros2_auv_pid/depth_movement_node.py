@@ -10,9 +10,9 @@ from ros2_auv_pid.pid import *
 
 class DepthMovement(Node):
     def __init__(self):
-        super().__init__("pid_node")
+        super().__init__("depth_node")
 
-        #Variables
+        # Variables
         self.z = 0
         self.target_z = 2.5
         self.previous_error = -1.0
@@ -25,7 +25,7 @@ class DepthMovement(Node):
         self.target_depth = self.create_subscription(Float64, "/target_depth", self.target_depth_callback, 10)
 
         # Publisher
-        self.publish_depth_pid = self.create_publisher(ManualControl, '/manual_control', 10)
+        self.publish_depth_pid = self.create_publisher(Float64, 'depth_control', 10)
 
         # Publishing PID at 20 Hz
         self.timer = self.create_timer(self.dt, self.publish_pid)
@@ -53,11 +53,8 @@ class DepthMovement(Node):
             self.get_logger().info(f"New pid: {self.pid}")
             self.get_logger().info(f"New error: {self.previous_error}")
 
-            msg = ManualControl()
-            msg.x = 0.0
-            msg.y = 0.0
-            msg.z = max(self.pid * -83.3, -500.0)
-            msg.r = 0.0
+            msg = Float64()
+            msg.data = max(self.pid * -83.3, -500.0)
             self.publish_depth_pid.publish(msg)
             self.get_logger().info(f"Target Depth: {self.target_z}")
             self.get_logger().info(f"Current Depth: {self.z}")

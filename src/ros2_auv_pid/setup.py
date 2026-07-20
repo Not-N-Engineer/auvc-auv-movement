@@ -25,6 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'depth_movement_node = ros2_auv_pid.depth_movement_node:main',
+            'heading_movement_node = ros2_auv_pid.heading_movement_node:main',
+            'movement_publisher_node = ros2_auv_pid.movement_publisher_node:main',
             'arming_node = ros2_auv_pid.arming_node:main',
         ],
     },
