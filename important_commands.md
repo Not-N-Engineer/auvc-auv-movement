@@ -11,8 +11,8 @@ ros2 run rosmav bluerov2_hardware_interface
 **Nodes build:**  
 cd ~/auvc-auv-movement && colcon build --packages-select ros2_auv_pid && source install/setup.zsh  
   
-**Depth node run:**  
-ros2 run ros2_auv_pid depth_movement_node  
+**All nodes run:**  
+ros2 launch ros2_auv_pid pid.launch.yaml
   
   
 **Arm**  
