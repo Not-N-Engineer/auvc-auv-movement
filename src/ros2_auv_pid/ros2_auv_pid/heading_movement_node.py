@@ -6,6 +6,7 @@ import time
 from mavros_msgs.msg import ManualControl
 from sensor_msgs.msg import (FluidPressure as Pressure, Imu)
 from std_msgs.msg import Float64
+from std_msgs.msg import Int16
 from ros2_auv_pid.pid import *
 
 
@@ -15,14 +16,15 @@ class HeadingMovement(Node):
 
         # Variables
         self.r = 0.0
-        self.target_r = np.pi
-        self.previous_error = -1.0
+        self.target_r = 260.0
+        self.previous_error = -1
         self.error_acc = 0
         self.pid = 0.0
         self.dt = 0.05
 
         # Subscribers
-        self.current_heading = self.create_subscription(Imu, "imu", self.current_heading_callback, 10)
+        # self.current_heading = self.create_subscription(Imu, "imu", self.current_heading_callback, 10)
+        self.current_heading = self.create_subscription(Int16, "heading", self.current_heading_callback, 10)
         self.target_heading = self.create_subscription(Float64, "/target_heading", self.target_heading_callback, 10)
 
         # Publisher
@@ -37,27 +39,30 @@ class HeadingMovement(Node):
         self.get_logger().info(f"NEW TARGET HEADING: {self.target_r}") 
 
     def current_heading_callback(self, msg):
-        # Callback
-        rotation_v = msg.zgyro
-        heading = self.r + rotation_v
-        
-        self.r = heading
+        self.r = msg.data % 360.0
         self.get_logger().info(f"New heading: {self.r}")
 
     def publish_pid(self):
         if not self.r == self.target_r:
             # Calculating PID
-            if self.previous_error == -1.0: self.previous_error = self.target_r - self.r
-            self.pid, self.previous_error = pid(self.target_r, self.r, self.previous_error, self.error_acc, self.dt, 3.6, 0.0, 1.2)
+            if self.previous_error == -1: self.previous_error = self.target_r - self.r
+            if self.previous_error > 180.0: self.previous_error -= 360.0
+            error = self.target_r - self.r
+            if error > 180.0: error -= 360.0
+            kp = 1.5
+            ki = 0.0
+            kd = 1.5
+
+            self.pid, self.previous_error = pid(self.previous_error, error, self.error_acc, self.dt, kp, ki, kd)
             self.error_acc = self.previous_error * self.dt
             self.get_logger().info(f"New pid: {self.pid}")
             self.get_logger().info(f"New error: {self.previous_error}")
 
             msg = Float64()
-            msg.data = max(self.pid * -83.3, -500.0)
-            self.publish_depth_pid.publish(msg)
-            self.get_logger().info(f"Target Depth: {self.target_r}")
-            self.get_logger().info(f"Current Depth: {self.r}")
+            msg.data = self.pid * 0.75
+            self.publish_heading_pid.publish(msg)
+            self.get_logger().info(f"Target Heading: {self.target_r}")
+            self.get_logger().info(f"Current Heading: {self.r}")
 
 
 def main(args=None):
