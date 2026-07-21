@@ -25,3 +25,5 @@ ros2 service call /arming std_srvs/srv/SetBool "{data: false}"
 
 **New Target Depth**  
 ros2 topic pub --once /target_depth std_msgs/msg/Float64 "{data: 1.0}"
+ros2 topic pub --once /target_heading std_msgs/msg/Float64 "{data: 135.0}"
+ros2 topic pub --once /surge_control std_msgs/msg/Float64 "{data: 250.0}"
