@@ -48,13 +48,13 @@ class DepthMovement(Node):
         if not self.z == self.target_z:
             # Calculating PID
             if self.previous_error == -1.0: self.previous_error = self.target_z - self.z
-            self.pid, self.previous_error = pid(self.target_z, self.z, self.previous_error, self.error_acc, self.dt, 3.6, 0.0, 1.2)
+            self.pid, self.previous_error = pid(self.previous_error, self.target_z - self.z, self.error_acc, self.dt, 3.6, 0.0, 1.2)
             self.error_acc = self.previous_error * self.dt
             self.get_logger().info(f"New pid: {self.pid}")
             self.get_logger().info(f"New error: {self.previous_error}")
 
             msg = Float64()
-            msg.data = max(self.pid * -83.3, -500.0)
+            msg.data = self.pid * -83.3
             self.publish_depth_pid.publish(msg)
             self.get_logger().info(f"Target Depth: {self.target_z}")
             self.get_logger().info(f"Current Depth: {self.z}")
