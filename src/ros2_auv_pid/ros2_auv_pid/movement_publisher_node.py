@@ -16,32 +16,42 @@ class MainMovement(Node):
         # Variables
         self.depth = 0.0
         self.heading = 0.0
+        self.surge = 0.0
 
         # Subscribers
-        self.depth = self.create_subscription(ManualControl, "depth_control", self.depth_callback, 10)
-        self.heading = self.create_subscription(ManualControl, "heading_control", self.heading_callback, 10)
+        self.depth_subscription = self.create_subscription(Float64, "depth_control", self.depth_callback, 10)
+        self.heading_subscription = self.create_subscription(Float64, "heading_control", self.heading_callback, 10)
+        self.surge_subscription = self.create_subscription(Float64, "/surge_control", self.surge_callback, 10)
 
         # Publisher
-        self.publish_pid = self.create_publisher(ManualControl, '/manual_control', 10)
+        self.publish_movement_pid = self.create_publisher(ManualControl, '/manual_control', 10)
 
         # Publishing PID at 20 Hz
-        self.timer = self.create_timer(self.dt, self.publish_pid)
+        self.timer = self.create_timer(0.05, self.publish_pid)
 
 
     def depth_callback(self, msg):
         self.depth = msg.data
-        self.get_logger().info(f"New depth: {self.depth}") 
-
+    
     def heading_callback(self, msg):
         self.heading = msg.data
-        self.get_logger().info(f"New heading: {self.heading}")
+
+    def surge_callback(self, msg):
+        self.surge = msg.data
 
     def publish_pid(self):
         msg = ManualControl()
-        msg.x = 0.0
+        msg.x = min(max(self.surge, -500.0), 500.0)
         msg.y = 0.0
-        msg.z = self.depth
-        msg.r = self.heading
+        msg.z = min(max(self.depth, -500.0), 500.0)
+        if self.surge == 0:
+            msg.r = min(max(self.heading, -500.0), 500.0)
+        else:
+            msg.r = min(max(self.heading, -500.0), 500.0)/5
+        self.get_logger().info(f"New depth pid: {msg.z}") 
+        self.get_logger().info(f"New heading pid: {msg.r}")
+
+        self.publish_movement_pid.publish(msg)
 
 
 def main(args=None):
